@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" text="Add Product">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label blendMode="MULTIPLY" minWidth="50.0" text="ID">
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addProdID" disable="true" editable="false" maxWidth="100.0" promptText="Auto-Generated">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label blendMode="MULTIPLY" minWidth="50.0" text="Name">
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addProdName" maxWidth="100.0" promptText="Part Name">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label blendMode="MULTIPLY" minWidth="50.0" text="Inv">
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addProdInv" maxWidth="100.0" promptText="Inv">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label blendMode="MULTIPLY" minWidth="50.0" text="Price">
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addProdPrice" maxWidth="100.0" promptText="Price">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label blendMode="MULTIPLY" minWidth="50.0" text="Max">
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addProdMax" maxWidth="100.0" promptText="Max Inv">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label blendMode="MULTIPLY" minWidth="50.0" text="Min">
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addProdMin" maxWidth="100.0" promptText="Min Inv">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="addProdSave" minWidth="65.0" mnemonicParsing="false" onMouseClicked="#addProdSave" text="Save">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="addProdCancel" minWidth="65.0" mnemonicParsing="false" onMouseClicked="#addProdCancel" text="Cancel">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="addProdSearch" minWidth="65.0" mnemonicParsing="false" onMouseClicked="#addProdSearch" text="Search">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <TextField fx:id="addProdSearchCriteria" onMouseClicked="#clearText" promptText="Search Criteria">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="addProdTable1" prefHeight="100.0" prefWidth="360.0">
+                          <columns>
+                            <TableColumn prefWidth="90.0" text="Part ID">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="id" />
+                                </cellValueFactory>
+                               </TableColumn>
+                               <TableColumn prefWidth="90.0" text="Part Name">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="name" />
+                                </cellValueFactory>  
+                               </TableColumn>
+                               <TableColumn prefWidth="90.0" text="Inventory Level">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="stock" />
+                                </cellValueFactory>
+                               </TableColumn>
+                               <TableColumn prefWidth="90.0" text="Price Per Unit">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="price" />
+                                </cellValueFactory>
+                               </TableColumn>
+                          </columns>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Button fx:id="addProdAdd" minWidth="65.0" mnemonicParsing="false" onMouseClicked="#addProdAdd" text="Add Assoc Part">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="addProdTable2" prefHeight="100.0" prefWidth="360.0">
+                           <columns>
+                               <TableColumn prefWidth="90.0" text="Part ID">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="id" />
+                                </cellValueFactory>
+                               </TableColumn>
+                               <TableColumn prefWidth="90.0" text="Part Name">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="name" />
+                                </cellValueFactory>  
+                               </TableColumn>
+                               <TableColumn prefWidth="90.0" text="Inventory Level">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="stock" />
+                                </cellValueFactory>
+                               </TableColumn>
+                               <TableColumn prefWidth="90.0" text="Price Per Unit">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="price" />
+                                </cellValueFactory>
+                               </TableColumn>
+                           </columns>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Button minWidth="65.0" mnemonicParsing="false" onMouseClicked="#addProdDelete" text="Delete Assoc Part">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
